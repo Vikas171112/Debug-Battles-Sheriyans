@@ -88,7 +88,7 @@ Read the code carefully, trace the logic, and squash every bug. May the best deb
 
 ## Bug List
 
-| #   | Bug                  | Location         | Impact          | Fix         |
-| --- | -------------------- | ---------------- | --------------- | ----------- |
-| 1   | Incorrect date split | HabitList.jsx    | Wrong progress  | Fixed index |
-| 2   | Wrong array update   | HabitContext.jsx | Data corruption | Used spread |
+| #   | Bug                | Location         | Impact           | Fix                  |
+| --- | ------------------ | ---------------- | ---------------- | -------------------- |
+| 1   | Context Not Passed | HabitContext.jsx | undefined values | passed HabbitContext |
+| 2   | Wrong array update | HabitContext.jsx | Data corruption  | Used spread          |

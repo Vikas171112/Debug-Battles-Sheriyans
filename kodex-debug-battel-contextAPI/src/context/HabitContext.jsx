@@ -81,4 +81,4 @@ export const HabitProvider = ({ children }) => {
   );
 };
 
-export const useHabit = () => useContext();
+export const useHabit = () => useContext(HabitContext);
