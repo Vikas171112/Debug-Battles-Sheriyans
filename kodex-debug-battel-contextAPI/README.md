@@ -87,3 +87,8 @@ npm run dev
 Read the code carefully, trace the logic, and squash every bug. May the best debugger win! 🏅
 
 ## Bug List
+
+| #   | Bug                  | Location         | Impact          | Fix         |
+| --- | -------------------- | ---------------- | --------------- | ----------- |
+| 1   | Incorrect date split | HabitList.jsx    | Wrong progress  | Fixed index |
+| 2   | Wrong array update   | HabitContext.jsx | Data corruption | Used spread |
