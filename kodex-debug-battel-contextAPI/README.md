@@ -86,9 +86,54 @@ npm run dev
 
 Read the code carefully, trace the logic, and squash every bug. May the best debugger win! 🏅
 
-## Bug List
+## HabitContext Bugs Fixed
 
-| #   | Bug                | Location         | Impact           | Fix                  |
-| --- | ------------------ | ---------------- | ---------------- | -------------------- |
-| 1   | Context Not Passed | HabitContext.jsx | undefined values | passed HabbitContext |
-| 2   | Wrong array update | HabitContext.jsx | Data corruption  | Used spread          |
+Fixed incorrect date extraction logic (split("T")[1] → split("T")[0])
+
+Fixed completedDates initialization (null → [])
+Fixed missing return in map function (return h)
+Fixed array mutation using .push() (used spread operator instead)
+Fixed incorrect filter logic in toggle (used !== instead of ===)
+Fixed toggle logic to properly add/remove today's date
+Fixed streak calculation direction (future → past using -1)
+Fixed delete functionality logic (filter !==)
+Replaced loose equality (==) with strict equality (===)
+
+## HabitList Bugs Fixed
+
+Fixed incorrect date extraction logic
+Fixed progress percentage calculation (multiplication → division)
+Added empty state UI instead of returning null
+Fixed slice logic (slice(3) → slice(0,3))
+Fixed reduce edge case handling for empty data
+
+Improved conditional rendering for better UX
+
+## HabitItem Bugs Fixed
+
+Fixed incorrect date extraction logic
+Fixed direct state mutation (used setState with spread operator)
+Fixed editing toggle logic (true → false after save)
+Fixed reference issue by cloning habit object in state
+Added proper edit/save/cancel UI flow
+Fixed toggle button behavior (mark/unmark correctly)
+Improved UI rendering using conditional editing state
+
+## HabitForm Bugs Fixed
+
+Fixed reset function call (reset → reset())
+Converted goalValue from string to number
+Fixed ID generation using crypto.randomUUID()
+Added proper form structure and UI layout
+Added missing input types (type="number")
+Added validation for required fields
+Improved form UX with labels and placeholders
+
+## Dashboard UI Improvements
+
+Improved layout spacing and alignment
+Added consistent card design (rounded-xl, shadow-sm)
+Improved sidebar styling and structure
+Enhanced header UI (goal badge styling)
+Fixed overflow and layout issues
+Improved visual hierarchy and readability
