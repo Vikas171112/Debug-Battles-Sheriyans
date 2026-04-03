@@ -17,7 +17,7 @@ The application looks like it should work, but almost nothing functions correctl
 ## 📋 Rules
 
 1. **Find and fix all the bugs** in the codebase.
-2. Bugs are spread across **multiple files** — no file is safe!   - 🔴 **State & mutation issues**
+2. Bugs are spread across **multiple files** — no file is safe! - 🔴 **State & mutation issues**
    - 🔴 **React rendering bugs**
    - 🔴 **Logic & conditional errors**
    - 🔴 **Date handling mistakes**
@@ -82,8 +82,8 @@ npm run dev
 
 ---
 
-
-
 ## ⚡ Good Luck!
 
 Read the code carefully, trace the logic, and squash every bug. May the best debugger win! 🏅
+
+## Bug List
